@@ -16,3 +16,12 @@ $ docker run kelw/fluentd:0.12 -v
 
 the above command will pull the image and override it default command, instead the command will print out the full version of Fluentd that is running.
 
+> COMMENT: this image musy have the following addons:
+>
+> * Prometheus plugins
+> *
+
+## Step 2: 
+
+
+

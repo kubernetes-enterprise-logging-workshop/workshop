@@ -1,8 +1,8 @@
-# Laboratory
+# Requirements
 
-The goal of this laboratory is to excerise the end-to-end steps required for a healthy Logging scenario for a Kubernetes environment.
+The goal of this workshop is to excerise the end-to-end steps required for a healthy Logging scenario for a Kubernetes environment, for hence certain technical requirements must be present before to get started.
 
-## Requirements
+## Docker Container Engine
 
 Your local station or Laptop must be running an updated version of Docker, you can get detailed instructions from the following table:
 
