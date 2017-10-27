@@ -1,3 +1,10 @@
-# My Awesome Book
+# Kubernetes: Enterprise Logging Workshop
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+
+
+## Takeaways for Attendees
+
+* Understand the 
+
+
+
