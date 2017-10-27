@@ -6,7 +6,7 @@ Fluentd can be installed from sources or through  pre-built packages that exists
 
 Official images of Fluentd for production usage are available at [fluent/fluentd](https://hub.docker.com/r/fluent/fluentd/) repository, for this laboratory we will use the images we have prepared on [KELW](https://hub.docker.com/r/kelw) Docker Hub Organization.
 
-## Step 1: Pull Fluentd image and run it
+## Step 1: Pull Fluentd Image and Run it
 
 Run the last version of Fluentd v0.12 series:
 
@@ -28,6 +28,12 @@ The following command will mount a volume with Fluentd configuration files and r
 ```
 $ docker run -v /some/some kelw/fluentd:0.12 -c /
 ```
+
+> COMMENT: above config files should contain:
+>
+> * sample of apache log files
+> * sample of syslog log files
+> * basic config with in\_tail to consume above files and write them down to JSON output files
 
 
 

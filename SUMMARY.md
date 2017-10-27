@@ -9,4 +9,5 @@
 
 * [Running Docker Applications](running-docker-applications.md)
 * [Installing and Running Fluentd](installing-and-running-fluentd.md)
+* [Monitoring Fluentd](monitoring-fluentd.md)
 
