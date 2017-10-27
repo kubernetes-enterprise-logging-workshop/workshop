@@ -1,5 +1,7 @@
 # Running Docker applications
 
+> Estimated Time: 4 - 6 minutes
+
 Docker is a fundamental piece in the CloudNative ecosystem, the following steps will guide you to learn and run packaged applications as Docker images.
 
 All images used in this article are public and available in our Docker Hub Organization called [KELW](https://hub.docker.com/u/kelw/)
