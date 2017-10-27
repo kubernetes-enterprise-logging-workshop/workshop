@@ -18,10 +18,16 @@ the above command will pull the image and override it default command, instead t
 
 > COMMENT: this image musy have the following addons:
 >
+> * Monitor / Debug Plugin
 > * Prometheus plugins
-> *
 
-## Step 2: 
+## Step 2: Run Fluentd with Configuration Files
+
+The following command will mount a volume with Fluentd configuration files and run Fluentd using the most basic file:
+
+```
+$ docker run -v /some/some kelw/fluentd:0.12 -c /
+```
 
 
 
