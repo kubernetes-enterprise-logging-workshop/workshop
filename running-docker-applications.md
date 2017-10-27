@@ -20,13 +20,22 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 
 If the command shows an output similar to the one above, means that your Docker service is running
 
-## **Step 2: Run a simple Docker image from the Public Registry**
+## **Step 2: Run our hello-world image from the Public Registry**
 
-Run our hello-world application located at kelw/hello-world:
+To get familiar with public images from the registry, run our hello-world image  located at kelw/hello-world:
 
 ```bash
+$ docker run kewl/hello-world
+```
 
+The above command will lookup the image locally, if it's not found, it will pull it and then run it.
 
+## Step 3: Checkout a different version of hello-world image
+
+Docker images have the concept of tags, which is commonly used to associate specific versions to an image. So an image repository might have different versions available:
+
+```
+$ docker run kewl/hello-world:v2
 ```
 
 
