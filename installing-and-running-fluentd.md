@@ -23,28 +23,50 @@ the above command will pull the image and override it default command, instead t
 
 ## Step 2: Volumes
 
-Docker containers can have access to files located in the host system through _volumes. _The kelw repository project contains two main directories that are used along the laboratory:
+Docker containers can have access to files located in the host system through _volumes_. The kelw repository project contains two main directories that are used along the laboratory:
 
-* config/: several configuration files for Fluentd
-* data/: files used as samples for several configurations
+| Directory | Description |
+| :--- | :--- |
+| config/ | configuration files for Fluentd |
+| data/ | data sample files used for different setups |
 
+to get started join into the KELW labs 2.2 directory:
 
+```
+$ cd kelw/labs/2.2
+```
 
-docker run -v $PWD/data:/kelw/data -v $PWD/config:/kelw/config/ kelw/fluentd:0.12 fluentd -c /kelw/config/01\_tail\_stdout.conf
+then mount the kelw current lab in Docker as a mounted volume:
+
+```
+$ docker run -v $PWD:/kelw kelw/fluentd:0.12 ls -l /kelw
+```
+
+> the current directory labs/2.2/ content will be visible from /kelw
 
 ## Step 3: Run Fluentd with Configuration Files
 
-The following command will mount a volume with Fluentd configuration files and run Fluentd using the most basic file:
+The following command will mount a volume with Fluentd configuration files and run it using the 01\_tail\_stdout.conf configuration file:
 
 ```
-$ docker run -v /some/some kelw/fluentd:0.12 -c /
+<source>
+  type tail
+  path /kelw/data/simple.txt
+  tag  raw
+  format none
+  read_from_head true
+</source>
+
+<match **>
+  type stdout
+</match>
 ```
 
-> COMMENT: above config files should contain:
->
-> * sample of apache log files
-> * sample of syslog log files
-> * basic config with in\_tail to consume above files and write them down to JSON output files
+Command:
+
+```
+$ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/01_tail_stdout.conf
+```
 
 
 
