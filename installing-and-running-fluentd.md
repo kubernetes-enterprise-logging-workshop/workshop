@@ -49,6 +49,12 @@ $ docker run -v $PWD:/kelw kelw/fluentd:0.12 ls -l /kelw
 The following command will mount a volume with Fluentd configuration files and run it using the 01\_tail\_stdout.conf configuration file:
 
 ```
+$ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/01_tail_stdout.conf
+```
+
+Configuration file
+
+```
 <source>
   type tail
   path /kelw/data/simple.txt
@@ -60,12 +66,6 @@ The following command will mount a volume with Fluentd configuration files and r
 <match **>
   type stdout
 </match>
-```
-
-Command:
-
-```
-$ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/01_tail_stdout.conf
 ```
 
 
