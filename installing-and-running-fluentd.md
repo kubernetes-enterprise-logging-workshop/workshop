@@ -1,6 +1,6 @@
 ## Installing and Running Fluentd
 
-> Estimated Time: 10 - 15 minutes
+> Estimated Time: 5 - 10 minutes
 
 Fluentd can be installed from sources or through  pre-built packages that exists for different operating systems and Linux Distributions.  For the Cloud Native space we strongly recommend to use our official Docker images since they are validated, secured and supported by Fluentd core maintainers.
 
