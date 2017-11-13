@@ -1,6 +1,6 @@
 # Kubernetes Enterprise Logging Workshop
 
-> KEWL for short
+> KELW for short
 
 The following document is the initial draft for the Kubernetes Logging Workshop for CloudNativeCon US 2017, it's being writen using Gitbook and aims to be viewed in a rendered HTML web site.
 

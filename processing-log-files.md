@@ -35,3 +35,31 @@ $ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/02_tail_std
 
 After look at the Fluentd output, check the configuration files used on each command, what are the main differences ?
 
+## Step 2: Extend Tags with File names
+
+Tags are the core functionality for filtering and routing to multiple destinations in Fluentd. On this exercise, edit the configuration file **02\_tail\_stdout.conf **and replace:
+
+```
+Tag webserver
+```
+
+by
+
+```
+Tag webserver.*
+```
+
+Then run the modified configuration file:
+
+```
+$ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/02_tail_stdout.conf
+```
+
+What's different now in Fluentd output records ?
+
+## Step 3: Files position \(aka POS file\)
+
+In the real world log files gets data appended constantly, 
+
+
+
