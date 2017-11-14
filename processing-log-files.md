@@ -1,6 +1,6 @@
 # Processing Data / Log Files
 
-> Estimated Time: 10 - 15 minutes
+> Estimated Time: 20 - 25 minutes
 
 Fluentd as a log processor, aggregator and forwarder, support many sources to listen from data, the most common source of data is through _log files_. The following section focus on Tail input plugin which allows Fluentd to consume log files and handle them properly.
 
@@ -113,9 +113,5 @@ Re-create a new apache.log file using the _apache.append_ file sample:
 $ cp apache.append apache.log
 ```
 
-
-
-
-
-
+Question: what is **rotate\_wait** ? hint: [https://docs.fluentd.org/v0.12/articles/in\_tail.](https://docs.fluentd.org/v0.12/articles/in_tail)
 
