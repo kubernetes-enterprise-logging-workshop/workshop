@@ -1,6 +1,6 @@
 # Processing Data / Log Files
 
-> Estimated Time: 5 - 10 minutes
+> Estimated Time: 10 - 15 minutes
 
 Fluentd as a log processor, aggregator and forwarder, support many sources to listen from data, the most common source of data is through _log files_. The following section focus on Tail input plugin which allows Fluentd to consume log files and handle them properly.
 
@@ -59,7 +59,63 @@ What's different now in Fluentd output records ?
 
 ## Step 3: Files position \(aka POS file\)
 
-In the real world log files gets data appended constantly, 
+In the real world log files gets data appended constantly so it's ideal that Fluentd can remember the last position of the file that it was processed in case something goes wrong \(system outage\).
+
+* Check the content of **03\_tail\_stdout.conf** configuration file
+* Check the path set for **pos\_file **variable
+
+Start Fluentd with the new configuration file:
+
+```
+$ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/03_tail_stdout.conf
+```
+
+Open the **pos\_file** generated and see it content. What does it represents ?
+
+## Step 4: Append more data
+
+Using the same configuration from **Step 3, **start the container:
+
+```
+$ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/03_tail_stdout.conf
+```
+
+From a different termina,l now append data to the monitored apache log file and see how Fluentd output changes. Then re-check it **pos\_file **content:
+
+```
+$ cat apache.append >> apache.log
+```
+
+## **Step 5: Files Rotation**
+
+Log rotation is a common administration task which is done usually through a third party utility like logrotate. Fluentd as a log processor have to deal with such scenarios and the proper configuration to detect these changes is fundamental.
+
+* Check the content of **04\_tail\_stdout.conf** configuration file
+* Check the value of **refresh\_interval** variable
+
+Start Fluentd container with the following command:
+
+```
+$ docker run -v $PWD:/kelw kelw/fluentd:0.12 fluentd -c /kelw/config/04_tail_stdout.conf
+```
+
+now from a different terminal, simulate a log rotation:
+
+```
+$ mv apache.log apache.log.1
+```
+
+pay attention to Fluentd container logs, what does it say ?
+
+Re-create a new apache.log file using the _apache.append_ file sample:
+
+```
+$ cp apache.append apache.log
+```
+
+
+
+
 
 
 
