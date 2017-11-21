@@ -50,3 +50,13 @@ $ az aks create --resource-group kelw --name k8s --node-count 1 --generate-ssh-k
 
 Details: Required resource provider registrations Microsoft.Compute,Microsoft.Network are missing
 
+## Connect to the Cluster
+
+```
+$ az aks get-credentials --resource-group kelw --name k8s
+```
+
+
+
+
+
