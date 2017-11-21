@@ -13,3 +13,7 @@
 * [Docker and Application Logs](json-logs.md)
 * [Monitoring Fluentd](monitoring-fluentd.md)
 
+## Azure Container Service
+
+* [Setup](azure-container-service/setup.md)
+
