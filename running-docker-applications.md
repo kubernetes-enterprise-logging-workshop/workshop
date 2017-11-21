@@ -27,7 +27,7 @@ If the command shows an output similar to the one above, means that your Docker 
 To get familiar with public images from the registry, run our hello-world image  located at kelw/hello-world:
 
 ```bash
-$ docker run kewl/hello-world
+$ docker run kelw/hello-world
 ```
 
 The above command will lookup the image locally, if it's not found, it will pull it and then run it.
@@ -37,7 +37,7 @@ The above command will lookup the image locally, if it's not found, it will pull
 Docker images have the concept of tags, which is commonly used to associate specific versions to an image. So an image repository might have different versions available:
 
 ```
-$ docker run kewl/hello-world:v2
+$ docker run kelw/hello-world:v2
 ```
 
 

@@ -12,9 +12,16 @@ Your local station or Laptop must be running an updated version of Docker, you c
 | Windows | [https://www.docker.com/docker-windows](https://www.docker.com/docker-windows) |
 | Linux and Others | [https://www.docker.com/get-docker](https://www.docker.com/get-docker) |
 
+## Download Docker Images
+
+```bash
+$ docker pull kelw/fluentd:0.12
+$ docker pull kelw/hello-world
+$ docker pull kelw/apache-random
+$ docker pull kelw/json-random
+```
+
 ## Kubernetes Command Line Tool
 
 [https://kubernetes.io/docs/tasks/tools/install-kubectl/](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-
-
 
