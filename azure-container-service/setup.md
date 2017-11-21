@@ -1,7 +1,9 @@
 # Configure your Azure Container Service
 
-Microsoft as a sponsor of Kubernetes Enterprise Logging Workshop, have provided Azure credits which can be used to test and try a Kubernetes cluster on Azure Container Service.  
-  
+> Estimated Time: 30 minutes
+
+Microsoft as a sponsor of Kubernetes Enterprise Logging Workshop, have provided Azure credits which can be used to test and try a Kubernetes cluster on Azure Container Service.
+
 This benefit is exclusive for CloudNativeCon 2017 / Logging Workshop attendees.
 
 ## Activate your Account / Redeem Code
@@ -38,19 +40,11 @@ Create Resource Group
 $ az group create --name kelw --location eastus
 ```
 
-Create Cluster
-
-```
-$ az aks create --resource-group kelw --name k8s --node-count 1 --generate-ssh-keys
-```
-
 ## Create Kubernetes Cluster
 
 ```
 $ az aks create --resource-group kelw --name k8s --node-count 1 --generate-ssh-keys
 ```
-
-
 
 
 
