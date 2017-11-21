@@ -52,11 +52,25 @@ Details: Required resource provider registrations Microsoft.Compute,Microsoft.Ne
 
 ## Connect to the Cluster
 
+Load creadentials for Kubernetes client tool:
+
+> Credentials to be stored on ~/.kube/aks
+
 ```
-$ az aks get-credentials --resource-group kelw --name k8s
+$ az aks get-credentials --resource-group kelw --name k8s -f ~/.kube/aks
 ```
 
+Export the configuration
 
+```
+$ export KUBECONFIG=~/.kube/aks
+```
+
+List nodes
+
+```
+$ kubectl get nodes
+```
 
 
 
