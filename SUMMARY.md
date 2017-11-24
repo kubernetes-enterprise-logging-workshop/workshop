@@ -17,3 +17,7 @@
 
 * [Setup](azure-container-service/setup.md)
 
+## Kubernetes & Logging
+
+* [Fluentd DaemonSet](kubernetes-and-logging/fluentd-daemonset.md)
+

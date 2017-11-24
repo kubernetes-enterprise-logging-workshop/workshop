@@ -46,10 +46,6 @@ $ az group create --name kelw --location eastus
 $ az aks create --resource-group kelw --name k8s --node-count 1 --generate-ssh-keys
 ```
 
-**FIXME &gt; NOT WORKING:**
-
-Details: Required resource provider registrations Microsoft.Compute,Microsoft.Network are missing
-
 ## Connect to the Cluster
 
 Load creadentials for Kubernetes client tool:
