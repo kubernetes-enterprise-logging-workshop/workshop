@@ -6,5 +6,7 @@ A DaemonSet is a Pod that runs on every node of a Kubernetes Cluster. Fluentd as
 * Enrich logs with Kubernetes metadata \(labels/annotations\)
 * Send logs to one or multiple destinations like local database or cloud services.
 
+# Step 1:
+
 
 
