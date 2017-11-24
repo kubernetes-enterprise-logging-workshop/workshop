@@ -27,5 +27,11 @@ Fluentd configuration will be set through a Kubernetes ConfigMap, to create it r
 $ kubectl create -f kelw/4.1/config/fluentd-configmap.yaml
 ```
 
+## Step 3: Deploy Fluentd
+
+```
+$ kubectl create -f kelw/4.1/config/fluentd-ds.yaml
+```
+
 
 
