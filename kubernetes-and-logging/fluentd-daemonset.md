@@ -19,7 +19,13 @@ $ kubectl create -f kelw/4.1/config/fluentd-role.yaml
 $ kubectl create -f kelw/4.1/config/fluentd-role-binding.yaml
 ```
 
-## Step 2: 
+## Step 2: Configuration
+
+Fluentd configuration will be set through a Kubernetes ConfigMap, to create it run the following command:
+
+```
+$ kubectl create -f kelw/4.1/config/fluentd-configmap.yaml
+```
 
 
 
