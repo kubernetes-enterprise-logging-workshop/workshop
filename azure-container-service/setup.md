@@ -28,16 +28,18 @@ Login:
 $ az login
 ```
 
-Register Provider:
+Register Providers:
 
 ```
 $ az provider register -n Microsoft.ContainerService
+$ az provider register -n Microsoft.Compute
+$ az provider register -n Microsoft.Network
 ```
 
 Create Resource Group
 
 ```
-$ az group create --name kelw --location eastus
+$ az group create --name kelw --location centralus
 ```
 
 ## Create Kubernetes Cluster
