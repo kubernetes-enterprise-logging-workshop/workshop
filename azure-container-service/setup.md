@@ -4,7 +4,7 @@
 
 Microsoft as a sponsor of Kubernetes Enterprise Logging Workshop, have provided Azure credits which can be used to test and try a Kubernetes cluster on Azure Container Service.
 
-This benefit is exclusive for CloudNativeCon 2017 / Logging Workshop attendees.
+This **benefit is exclusive** for CloudNativeCon 2017 / Logging Workshop attendees.
 
 ## Activate your Account / Redeem Code
 
