@@ -31,17 +31,15 @@ $ kubectl create -f kelw/4.1/config/fluentd-configmap.yaml
 
 The DaemonSet Yaml file also exports the required information to connect to the Elasticsearch Cloud Service that is being used on this workshop, locate the Fluentd Container section and fill the missing fields:
 
-
-
 ```js
       containers:
       - name: fluentd
         image: kelw/fluent:0.12
         env:
           - name:  FLUENT_ELASTICSEARCH_HOST
-            value: "419ca556420506301e938a37fb984621.us-east-1.aws.found.io"
+            value: ""
           - name:  FLUENT_ELASTICSEARCH_PORT
-            value: "9243"
+            value: ""
           - name: FLUENT_ELASTICSEARCH_SCHEME
             value: "https"
           # X-Pack Authentication
@@ -49,8 +47,7 @@ The DaemonSet Yaml file also exports the required information to connect to the 
           - name: FLUENT_ELASTICSEARCH_USER
             value: "elastic"
           - name: FLUENT_ELASTICSEARCH_PASSWORD
-            value: "1KD1aXUVIBKupR0exg9fmPEL"
-
+            value: ""
 ```
 
 ## Step 4: Deploy Fluentd
