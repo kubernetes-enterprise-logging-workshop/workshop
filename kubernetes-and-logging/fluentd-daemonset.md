@@ -1,5 +1,7 @@
 # Fluentd DaemonSet
 
+> Estimated Time: 15-20 minutes
+
 A DaemonSet is a Pod that runs on every node of a Kubernetes Cluster. Fluentd as a Log processor needs to be  deployed as a DaemonSet where it will take care of:
 
 * Collect logs from running Pods/Containers
