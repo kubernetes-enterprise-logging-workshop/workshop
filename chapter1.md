@@ -21,7 +21,4 @@ $ docker pull kelw/apache-random
 $ docker pull kelw/json-random
 ```
 
-## Kubernetes Command Line Tool
-
-[https://kubernetes.io/docs/tasks/tools/install-kubectl/](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
