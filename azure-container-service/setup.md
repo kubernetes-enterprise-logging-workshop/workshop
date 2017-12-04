@@ -20,15 +20,20 @@ This **benefit is exclusive** for CloudNativeCon 2017 / Logging Workshop attende
 
 [https://docs.microsoft.com/en-us/cli/azure/install-azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
+Simplest approach is to run the Azure cli in a container.
+```
+docker run -it --rm -v ${HOME}:/root/ azuresdk/azure-cli-python:2.0.21
+```
+
 ## Configure Azure Environment
 
-Login:
+Login
 
 ```
 $ az login
 ```
 
-Register Providers:
+Register Resource Providers manually since AKS is in preview
 
 ```
 $ az provider register -n Microsoft.ContainerService
@@ -45,12 +50,12 @@ $ az group create --name kelw --location centralus
 ## Create Kubernetes Cluster
 
 ```
-$ az aks create --resource-group kelw --name k8s --node-count 1 --generate-ssh-keys
+$ az aks create --resource-group kelw --name k8s --kubernetes-version 1.8.2 --node-count 1 --generate-ssh-keys
 ```
 
 ## Connect to the Cluster
 
-Load creadentials for Kubernetes client tool:
+Load credentials for Kubernetes client tool
 
 > Credentials to be stored on ~/.kube/aks
 
@@ -62,6 +67,12 @@ Export the configuration
 
 ```
 $ export KUBECONFIG=~/.kube/aks
+```
+
+Download and install the `kubectl` cli
+
+```
+$ az aks install-cli
 ```
 
 List nodes
