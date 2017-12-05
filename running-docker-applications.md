@@ -17,7 +17,15 @@ Client:
  Git commit:   afdb6d4
  Built:        Tue Sep 26 22:42:45 2017
  OS/Arch:      linux/amd64
-Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:24 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
 ```
 
 If the command shows an output similar to the one above, means that your Docker service is running
