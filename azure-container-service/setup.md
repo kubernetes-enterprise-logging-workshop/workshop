@@ -46,7 +46,7 @@ $ az provider register -n Microsoft.Storage
 Create Resource Group
 
 ```
-$ az group create --name kelw --location centralus
+$ az group create --name kelw --location eastus
 ```
 
 ## Create Kubernetes Cluster
