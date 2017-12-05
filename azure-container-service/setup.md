@@ -70,7 +70,7 @@ Export the configuration
 $ export KUBECONFIG=~/.kube/aks
 ```
 
-Download and install the `kubectl` cli
+If kubectl is not in your system, download and install it with:
 
 ```
 $ az aks install-cli
