@@ -16,9 +16,9 @@ The following commands will create the Namespace, service account and roles to a
 
 ```
 $ kubectl create namespace logging
-$ kubectl create -f kelw/4.1/config/fluentd-service-account.yaml
-$ kubectl create -f kelw/4.1/config/fluentd-role.yaml
-$ kubectl create -f kelw/4.1/config/fluentd-role-binding.yaml
+$ kubectl create -f kelw/labs/4.1/config/fluentd-service-account.yaml
+$ kubectl create -f kelw/labs/4.1/config/fluentd-role.yaml
+$ kubectl create -f kelw/labs/4.1/config/fluentd-role-binding.yaml
 ```
 
 ## Step 2: Configuration
@@ -26,7 +26,7 @@ $ kubectl create -f kelw/4.1/config/fluentd-role-binding.yaml
 Fluentd configuration will be set through a Kubernetes ConfigMap, to create it run the following command:
 
 ```
-$ kubectl create -f kelw/4.1/config/fluentd-configmap.yaml
+$ kubectl create -f kelw/labs/4.1/config/fluentd-configmap.yaml
 ```
 
 ## Step 3: Edit DaemonSet Yaml file
