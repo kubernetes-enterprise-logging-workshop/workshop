@@ -16,11 +16,6 @@ $ docker run kelw/fluentd:0.12 fluentd --version
 
 the above command will pull the image and override it default command, instead the command will print out the full version of Fluentd that is running.
 
-> COMMENT: this image musy have the following addons:
->
-> * Monitor / Debug Plugin
-> * Prometheus plugins
-
 ## Step 2: Volumes
 
 Docker containers can have access to files located in the host system through _volumes_. The kelw repository project contains two main directories that are used along the laboratory:
