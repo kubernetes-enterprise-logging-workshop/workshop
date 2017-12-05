@@ -21,4 +21,15 @@ $ docker pull kelw/apache-random
 $ docker pull kelw/json-random
 ```
 
+## Kubernetes Command Line Tool {#kubernetes-command-line-tool}
+
+[https://kubernetes.io/docs/tasks/tools/install-kubectl/](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+## Workshop Assets
+
+```
+$ git clone https://github.com/kubernetes-enterprise-logging-workshop/assets kelw
+```
+
+
 
