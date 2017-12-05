@@ -40,13 +40,13 @@ After look at the Fluentd output, check the configuration files used on each com
 Tags are the core functionality for filtering and routing to multiple destinations in Fluentd. On this exercise, edit the configuration file **02\_tail\_stdout.conf **and replace:
 
 ```
-Tag webserver
+tag webserver
 ```
 
 by
 
 ```
-Tag webserver.*
+tag webserver.*
 ```
 
 Then run the modified configuration file:
