@@ -21,6 +21,7 @@ This **benefit is exclusive** for CloudNativeCon 2017 / Logging Workshop attende
 [https://docs.microsoft.com/en-us/cli/azure/install-azure-cli](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 Simplest approach is to run the Azure cli in a container.
+
 ```
 docker run -it --rm -v ${HOME}:/root/ azuresdk/azure-cli-python:2.0.21
 ```
