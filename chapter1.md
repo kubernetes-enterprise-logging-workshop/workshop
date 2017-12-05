@@ -28,7 +28,7 @@ $ docker pull kelw/json-random
 ## Workshop Assets
 
 ```
-$ git clone https://github.com/kubernetes-enterprise-logging-workshop/assets
+$ git clone https://github.com/kubernetes-enterprise-logging-workshop/assets kelw
 ```
 
 
