@@ -20,4 +20,5 @@
 ## Kubernetes & Logging
 
 * [Fluentd DaemonSet](kubernetes-and-logging/fluentd-daemonset.md)
+* [Generate Data Samples](kubernetes-and-logging/generate-data-samples.md)
 
