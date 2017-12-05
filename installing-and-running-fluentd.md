@@ -41,6 +41,12 @@ $ docker run -v $PWD:/kelw kelw/fluentd:0.12 ls -l /kelw
 
 ## Step 3: Run Fluentd with Configuration Files
 
+Check the content of the simple.txt log file:
+
+```
+$ cat data/simple.txt
+```
+
 The following command will mount a volume with Fluentd configuration files and run it using the 01\_tail\_stdout.conf configuration file:
 
 ```
