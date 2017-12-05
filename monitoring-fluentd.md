@@ -18,13 +18,11 @@ Check the example configuration file for Fluentd
 $ cat config/test.conf
 ```
 
-Run Fluentd against and use the configuration file ABC.conf which will tail and print the data out to JSON files:
+Run Fluentd with the test configuration file and then access the monitoring end-point
 
 ```
 $ docker run -v $PWD:/kelw -p 24220:24220 kelw/fluentd:0.12 fluentd -c /kelw/config/test.conf
 ```
-
->
 
 Now in a separate terminal window query the internal status using the _CURL_ command line program:
 
