@@ -55,7 +55,7 @@ The DaemonSet Yaml file also exports the required information to connect to the 
 ## Step 4: Deploy Fluentd
 
 ```
-$ kubectl create -f kelw/4.1/config/fluentd-ds.yaml
+$ kubectl create -f kelw/labs/4.1/config/fluentd-ds.yaml
 ```
 
 
